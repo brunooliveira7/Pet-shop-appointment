@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles.css" />
+
+    <title>Pet shop appointment</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo-container">
+        <img src="./src/assets/Logo.svg" alt="Logo" class="logo" />
+        <h1>Mundo Pet</h1>
+      </div>
+
+      <div class="content">
+        <header>
+          <h1>Sua agenda</h1>
+          <p>
+            Aqui você pode ver todos os clientes e serviços agendados para hoje.
+          </p>
+          <div class="input">
+            <i><img src="./src/assets/Calendar.svg" alt="Calendário" /></i>
+            <input type="date" id="date" name="date" required />
+          </div>
+        </header>
+
+        <main class="schedule">
+          <section class="schedule-period">
+            <header>
+              <img src="./src/assets/Sun Fog.svg" alt="Manhã" />
+              <strong>Manhã</strong>
+              <span>09h-12h</span>
+            </header>
+
+            <ul id="period-morning" class="period">
+              <li>
+                <span class="hour">11:00</span>
+                <strong>Thor</strong>
+                <span>/ Bruno Oliveira</span>
+                <p>Vacinação</p>
+                <button>Remover Agendamento</button>
+              </li>
+            </ul>
+          </section>
+
+          <section class="schedule-period">
+            <header>
+              <img src="./src/assets/Cloud Sun 4.svg" alt="Tarde" />
+              <strong>Tarde</strong>
+              <span>13h-18h</span>
+            </header>
+            <ul id="period-afternoon" class="period">
+              <li>
+                <span class="hour">15:00</span>
+                <strong>Mimi</strong>
+                <span>/ Isaac Oliveira</span>
+                <p>Aplicação de Anti-pulgas</p>
+                <button>Remover Agendamento</button>
+              </li>
+            </ul>
+          </section>
+
+          <section class="schedule-period">
+            <header>
+              <img src="./src/assets/Moon Stars.svg" alt="Noite" />
+              <strong>Noite</strong>
+              <span>19h-21h</span>
+            </header>
+            <ul id="period-night" class="period">
+              <li>
+                <span class="hour">20:00</span>
+                <strong>Suzi</strong>
+                <span>/ Andreia Oliveira</span>
+                <p>Limpeza de dentes</p>
+                <button>Remover Agendamento</button>
+              </li>
+            </ul>
+          </section>
+        </main>
+      </div>
+      
+      <div class="scheduling-button">
+        <button>
+          <span>Novo Agendamento</span>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
