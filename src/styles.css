@@ -73,7 +73,7 @@ header p {
   margin-bottom: 12px;
 }
 
-.input {
+.content .input {
   display: flex;
   width: 190px;
   padding: 12px;
@@ -83,7 +83,7 @@ header p {
   border: 1px solid #3e3c41;
 }
 
-input {
+.content .input input {
   border: none;
   color: #98959d;
   font-size: 16px;
@@ -221,6 +221,11 @@ p {
   z-index: 5;
 }
 
+.hidden {
+  display: none;
+  opacity: 0;
+}
+
 .modal-overlay {
   position: fixed;
   left: 50%;
@@ -234,17 +239,21 @@ p {
   background: #23242c;
   display: flex;
   width: 350px;
-  padding: 40px 20px 40px;
+  padding: 40px;
   justify-content: center;
   align-items: center;
-  gap: 28px;
+}
+
+.modal-header {
+  margin-bottom: 28px;
 }
 
 .modal-header h2 {
   color: #fff;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 700;
   line-height: 32px;
+  width: 100%;
 }
 
 .modal-header p {
@@ -263,6 +272,90 @@ p {
   top: 8px;
   width: 36px;
   height: 36px;
+}
+
+fieldset {
+  border: none;
+}
+
+.input-wrapper {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  margin-bottom: 16px;
+}
+
+.input-wrapper label {
+  width: 100%;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.input-wrapper .input {
+  display: flex;
+  padding: 12px;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  border: 1px solid #3e3c41;
+}
+
+.input-wrapper .input input {
+  width: 100%;
+  color: #98959d;
+  background: #23242c;
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.input-wrapper #description {
+  border-radius: 8px;
+  border: 1px solid #3e3c41;
+  height: 83px;
+  background: #23242c;
+  color: #98959d;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  padding: 12px;
+}
+
+.input-wrapper #description::placeholder {
+  color: #98959d;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.schedule-button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 28px;
+}
+
+.schedule-button button {
+  border: none;
+  border-radius: 8px;
+  background: #9282fa;
+  height: 48px;
+  width: 123px;
+  padding: 12px 24px;
+  cursor: pointer;
+}
+
+.schedule-button button span {
+  color: #050505;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
 }
 
 @media (min-width: 1366px) {
