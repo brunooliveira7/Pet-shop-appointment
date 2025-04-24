@@ -13,15 +13,13 @@
 body {
   min-height: 100vh;
   color: #e1e1e6;
-  display: grid;
   place-items: center;
   padding: 2rem 1rem;
   background: #14151d;
 }
 
 .container {
-  max-width: 390px;
-  width: 100%;
+  width: 390px;
 }
 
 .content {
@@ -202,4 +200,40 @@ p {
   font-weight: 700;
   line-height: 24px;
   text-transform: uppercase;
+}
+
+@media (min-width: 1366px) {
+  .container {
+    width: 1366px;
+  }
+
+  .content {
+    width: 871px;
+    padding: 0 80px;
+    margin: 0 250px;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+  }
+
+  header h1 {
+    width: 100%;
+  }
+
+  .header {
+    margin-right: 40px;
+  }
+
+  .scheduling-button{
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+    background: none;
+    box-shadow: none;
+    border: none;
+    margin-top: -10px;
+    padding: 0 20px;
+  }
 }
