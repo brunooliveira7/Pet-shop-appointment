@@ -210,6 +210,8 @@ p {
   text-transform: uppercase;
 }
 
+/* Modal - second screen */
+
 .fade {
   position: fixed;
   top: 0;
@@ -272,6 +274,11 @@ p {
   top: 8px;
   width: 36px;
   height: 36px;
+  transition: 0.4s;
+}
+
+.modal-header button:hover {
+  opacity: 0.8;
 }
 
 fieldset {
@@ -347,6 +354,11 @@ fieldset {
   width: 123px;
   padding: 12px 24px;
   cursor: pointer;
+  transition: 0.4s;
+}
+
+.schedule-button button:hover {
+  opacity: 0.8;
 }
 
 .schedule-button button span {
