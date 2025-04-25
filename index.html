@@ -15,14 +15,14 @@
 
       <div class="content">
         <header>
-          <div class="header">
+          <div class="agenda">
             <h1>Sua agenda</h1>
             <p>
               Aqui você pode ver todos os clientes e serviços agendados para
               hoje.
             </p>
           </div>
-          <div class="input">
+          <div class="input-date">
             <i><img src="./src/assets/Calendar.svg" alt="Calendário" /></i>
             <input type="date" id="date" name="date" required />
           </div>
@@ -83,7 +83,7 @@
         </main>
       </div>
 
-      <div class="scheduling-button">
+      <div class="new-schedule-button">
         <button>
           <span>Novo Agendamento</span>
         </button>
@@ -91,12 +91,12 @@
     </div>
 
     <!-- MODAL -->
-    <div class="fade hidden"></div>
+    <div class="fade"></div>
 
-    <div class="modal-overlay hidden">
+    <div class="modal-overlay">
       <div class="schedule-appointment">
         <div class="modal-header">
-          <button class="close">
+          <button class="close-modal-button">
             <img src="./src/assets/Close.svg" alt="Fechar" />
           </button>
           <h2>Agende um atendimento</h2>
@@ -198,7 +198,7 @@
               </div>
             </div>
 
-            <div class="schedule-button">
+            <div class="schedule-modal-button">
               <button>
                 <span>Agendar</span>
               </button>
