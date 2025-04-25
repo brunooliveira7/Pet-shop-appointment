@@ -9,14 +9,7 @@ const toggleModal = () => {
   fade.classList.toggle("hidden");
 };
 
-// Abre o modal
-schedule.addEventListener("click", (event) => {
-  event.preventDefault();
-  toggleModal();
-});
-
-// Fecha o modal (clicando nos elementos que devem fechar)
-[newSchedule, closeSchedule, fade].forEach((element) => {
+[newSchedule, schedule, closeSchedule].forEach((element) => {
   element.addEventListener("click", (event) => {
     event.preventDefault();
     toggleModal();
