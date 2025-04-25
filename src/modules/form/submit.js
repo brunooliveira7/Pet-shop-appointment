@@ -1,13 +1,14 @@
 import dayjs from "dayjs";
 const form = document.querySelector("form");
 const selectedDate = document.getElementById("date");
+const selectedHour = document.getElementById("hour");
+const availableHoursDataList = document.getElementById("available-hours");
 
 const inputToday = dayjs(new Date()).format("YYYY-MM-DD");
-//carrega a data atual - formata o input do modal.
+//carrega a data atual e valida definindo a data mínima sendo a atual.
 selectedDate.value = inputToday;
+selectedDate.min = inputToday;
 
-//validação da data - data mínima é a data atual.
-selectedDate.min = inputToday
 
 form.onsubmit = (event) => {
   event.preventDefault();

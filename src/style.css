@@ -321,7 +321,8 @@ fieldset {
   border: 1px solid #3e3c41;
 }
 
-.input-wrapper .input input {
+.input-wrapper .input input,
+select {
   width: 100%;
   color: #98959d;
   background: #23242c;
