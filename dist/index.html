@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles.css" />
+    <script src="./scripts.js" defer></script>
+
+    <title>Pet shop appointment</title>
+  <script defer src="main.js"></script></head>
+  <body>
+    <div class="container">
+      <div class="logo-container">
+        <img src="./src/assets/Logo.svg" alt="Logo" class="logo" />
+        <h1>Mundo Pet</h1>
+      </div>
+
+      <div class="content">
+        <header>
+          <div class="header">
+            <h1>Sua agenda</h1>
+            <p>
+              Aqui você pode ver todos os clientes e serviços agendados para
+              hoje.
+            </p>
+          </div>
+          <div class="input">
+            <i><img src="./src/assets/Calendar.svg" alt="Calendário" /></i>
+            <input type="date" id="date" name="date" required />
+          </div>
+        </header>
+
+        <main class="schedule">
+          <section class="schedule-period">
+            <header>
+              <img src="./src/assets/Sun Fog.svg" alt="Manhã" />
+              <strong>Manhã</strong>
+              <span>09h-12h</span>
+            </header>
+
+            <ul id="period-morning" class="period">
+              <li>
+                <span class="hour">11:00</span>
+                <strong>Thor</strong>
+                <span>/ Bruno Oliveira</span>
+                <p>Vacinação</p>
+                <button>Remover Agendamento</button>
+              </li>
+            </ul>
+          </section>
+
+          <section class="schedule-period">
+            <header>
+              <img src="./src/assets/Cloud Sun 4.svg" alt="Tarde" />
+              <strong>Tarde</strong>
+              <span>13h-18h</span>
+            </header>
+            <ul id="period-afternoon" class="period">
+              <li>
+                <span class="hour">15:00</span>
+                <strong>Mimi</strong>
+                <span>/ Isaac Oliveira</span>
+                <p>Aplicação de Anti-pulgas</p>
+                <button>Remover Agendamento</button>
+              </li>
+            </ul>
+          </section>
+
+          <section class="schedule-period">
+            <header>
+              <img src="./src/assets/Moon Stars.svg" alt="Noite" />
+              <strong>Noite</strong>
+              <span>19h-21h</span>
+            </header>
+            <ul id="period-night" class="period">
+              <li>
+                <span class="hour">20:00</span>
+                <strong>Suzi</strong>
+                <span>/ Andreia Oliveira</span>
+                <p>Limpeza de dentes</p>
+                <button>Remover Agendamento</button>
+              </li>
+            </ul>
+          </section>
+        </main>
+      </div>
+
+      <div class="scheduling-button">
+        <button>
+          <span>Novo Agendamento</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- MODAL -->
+    <div class="fade hidden"></div>
+
+    <div class="modal-overlay hidden">
+      <div class="schedule-appointment">
+        <div class="modal-header">
+          <button class="close">
+            <img src="./src/assets/Close.svg" alt="Fechar" />
+          </button>
+          <h2>Agende um atendimento</h2>
+          <p>Preencha os dados do cliente para realizar o agendamento:</p>
+        </div>
+        <form class="form">
+          <fieldset>
+            <div class="input-wrapper">
+              <label for="client" class="label">Nome do tutor</label>
+              <div class="input">
+                <i><img src="./src/assets/Client.svg" alt="Cliente" /></i>
+                <input
+                  type="text"
+                  id="client"
+                  name="client"
+                  placeholder="Nome do cliente"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="input-wrapper">
+              <label for="pet" class="label">Nome do pet</label>
+              <div class="input">
+                <i><img src="./src/assets/Pet.svg" alt="Pet" /></i>
+                <input
+                  type="text"
+                  id="pet"
+                  name="pet"
+                  placeholder="Nome do pet"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="input-wrapper">
+              <label for="phone" class="label">Telefone</label>
+              <div class="input">
+                <i><img src="./src/assets/Phone.svg" alt="Telefone" /></i>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="(00) 00000-0000"
+                  required
+                  div
+                />
+              </div>
+            </div>
+
+            <div class="input-wrapper">
+              <label for="description" class="label"
+                >Descrição do serviço</label
+              >
+              <textarea
+                name=""
+                id="description"
+                placeholder="Ex. Banho e tosa."
+              ></textarea>
+            </div>
+
+            <div class="time-date-field">
+              <div class="input-wrapper">
+                <label for="date" class="label">Data</label>
+                <div class="input">
+                  <i
+                    ><img src="./src/assets/calendar.svg" alt="Calendário"
+                  /></i>
+                  <input type="date" id="date" name="date" required />
+                </div>
+              </div>
+
+              <div class="input-wrapper">
+                <label for="hour" class="label">Hora</label>
+                <div class="input">
+                  <i><img src="./src/assets/Hour.svg" alt="Horas" /></i>
+                  <input
+                    type="text"
+                    id="hour"
+                    name="hour"
+                    list="available-hours"
+                    required
+                  />
+                  <datalist id="available-hours">
+                    <option value="09:00"></option>
+                    <option value="10:00"></option>
+                    <option value="11:00"></option>
+                    <option value="13:00"></option>
+                    <option value="14:00"></option>
+                    <option value="15:00"></option>
+                    <option value="16:00"></option>
+                    <option value="17:00"></option>
+                    <option value="18:00"></option>
+                    <option value="19:00"></option>
+                    <option value="20:00"></option>
+                    <option value="21:00"></option>
+                  </datalist>
+                </div>
+              </div>
+            </div>
+
+            <div class="schedule-button">
+              <button>
+                <span>Agendar</span>
+              </button>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+   
+  </body>
+</html>
