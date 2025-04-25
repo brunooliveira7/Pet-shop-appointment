@@ -223,14 +223,21 @@ p {
   z-index: 5;
 }
 
-.hidden {
+.fade.hidden,
+.modal-overlay.hidden {
   opacity: 0;
+  pointer-events: none;
 }
 
-.fade, .modal-overlay {
-  transition: 0.5s; 
+.fade,
+.modal-overlay {
+  transition: 0.5s;
   opacity: 1;
   pointer-events: all;
+}
+
+.modal-overlay.hidden {
+  top: 0;
 }
 
 .modal-overlay {
