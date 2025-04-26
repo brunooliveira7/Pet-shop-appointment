@@ -83,7 +83,7 @@
         </main>
       </div>
 
-      <div class="new-schedule-button">
+      <div class="schedule-open-modal">
         <button>
           <span>Novo Agendamento</span>
         </button>
@@ -91,118 +91,120 @@
     </div>
 
     <!-- MODAL -->
-    <div class="fade"></div>
+    <dialog>
+      <div class="fade"></div>
 
-    <div class="modal-overlay">
-      <div class="schedule-appointment">
-        <div class="modal-header">
-          <button class="close-modal-button">
-            <img src="./src/assets/Close.svg" alt="Fechar" />
-          </button>
-          <h2>Agende um atendimento</h2>
-          <p>Preencha os dados do cliente para realizar o agendamento:</p>
-        </div>
+      <div class="modal-overlay">
+        <div class="schedule-appointment">
+          <div class="modal-header">
+            <button class="close-modal">
+              <img src="./src/assets/Close.svg" alt="Fechar" />
+            </button>
+            <h2>Agende um atendimento</h2>
+            <p>Preencha os dados do cliente para realizar o agendamento:</p>
+          </div>
 
-        <form class="form">
-          <fieldset>
-            <div class="input-wrapper">
-              <label for="client" class="label">Nome do tutor</label>
-              <div class="input">
-                <i><img src="./src/assets/Client.svg" alt="Cliente" /></i>
-                <input
-                  type="text"
-                  id="client"
-                  name="client"
-                  placeholder="Nome do cliente"
-                  required
-                />
-              </div>
-            </div>
-
-            <div class="input-wrapper">
-              <label for="pet" class="label">Nome do pet</label>
-              <div class="input">
-                <i><img src="./src/assets/Pet.svg" alt="Pet" /></i>
-                <input
-                  type="text"
-                  id="pet"
-                  name="pet"
-                  placeholder="Nome do pet"
-                  required
-                />
-              </div>
-            </div>
-
-            <div class="input-wrapper">
-              <label for="phone" class="label">Telefone</label>
-              <div class="input">
-                <i><img src="./src/assets/Phone.svg" alt="Telefone" /></i>
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  placeholder="(00) 00000-0000"
-                  required
-                  div
-                />
-              </div>
-            </div>
-
-            <div class="input-wrapper">
-              <label for="description" class="label"
-                >Descrição do serviço</label
-              >
-              <textarea
-                name="description"
-                id="description"
-                placeholder="Ex. Banho e tosa."
-              ></textarea>
-            </div>
-
-            <div class="time-date-field">
+          <form class="form">
+            <fieldset>
               <div class="input-wrapper">
-                <label for="date" class="label">Data</label>
+                <label for="client" class="label">Nome do tutor</label>
                 <div class="input">
-                  <i
-                    ><img src="./src/assets/calendar.svg" alt="Calendário"
-                  /></i>
-                  <input type="date" id="date" name="date" required />
+                  <i><img src="./src/assets/Client.svg" alt="Cliente" /></i>
+                  <input
+                    type="text"
+                    id="client"
+                    name="client"
+                    placeholder="Nome do cliente"
+                    required
+                  />
                 </div>
               </div>
-            </div>
 
-            <div class="input-wrapper">
-              <label for="hour" class="label">Hora</label>
-              <div class="input">
-                <i><img src="./src/assets/Hour.svg" alt="Horas" /></i>
-                <select id="hour" name="hour" required>
-                  <option value="" disabled selected>
-                    Selecione um horário
-                  </option>
-                  <option value="09:00">09:00</option>
-                  <option value="10:00">10:00</option>
-                  <option value="11:00">11:00</option>
-                  <option value="13:00">13:00</option>
-                  <option value="14:00">14:00</option>
-                  <option value="15:00">15:00</option>
-                  <option value="16:00">16:00</option>
-                  <option value="17:00">17:00</option>
-                  <option value="18:00">18:00</option>
-                  <option value="19:00">19:00</option>
-                  <option value="20:00">20:00</option>
-                  <option value="21:00">21:00</option>
-                </select>
+              <div class="input-wrapper">
+                <label for="pet" class="label">Nome do pet</label>
+                <div class="input">
+                  <i><img src="./src/assets/Pet.svg" alt="Pet" /></i>
+                  <input
+                    type="text"
+                    id="pet"
+                    name="pet"
+                    placeholder="Nome do pet"
+                    required
+                  />
+                </div>
               </div>
-            </div>
 
-            <div class="schedule-modal-button">
-              <button>
-                <span>Agendar</span>
-              </button>
-            </div>
-          </fieldset>
-        </form>
+              <div class="input-wrapper">
+                <label for="phone" class="label">Telefone</label>
+                <div class="input">
+                  <i><img src="./src/assets/Phone.svg" alt="Telefone" /></i>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="(00) 00000-0000"
+                    required
+                    div
+                  />
+                </div>
+              </div>
+
+              <div class="input-wrapper">
+                <label for="description" class="label"
+                  >Descrição do serviço</label
+                >
+                <textarea
+                  name="description"
+                  id="description"
+                  placeholder="Ex. Banho e tosa."
+                ></textarea>
+              </div>
+
+              <div class="time-date-field">
+                <div class="input-wrapper">
+                  <label for="date" class="label">Data</label>
+                  <div class="input">
+                    <i
+                      ><img src="./src/assets/calendar.svg" alt="Calendário"
+                    /></i>
+                    <input type="date" id="date" name="date" required />
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-wrapper">
+                <label for="hour" class="label">Hora</label>
+                <div class="input">
+                  <i><img src="./src/assets/Hour.svg" alt="Horas" /></i>
+                  <select id="hour" name="hour" required>
+                    <option value="" disabled selected>
+                      Selecione um horário
+                    </option>
+                    <option value="09:00">09:00</option>
+                    <option value="10:00">10:00</option>
+                    <option value="11:00">11:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="14:00">14:00</option>
+                    <option value="15:00">15:00</option>
+                    <option value="16:00">16:00</option>
+                    <option value="17:00">17:00</option>
+                    <option value="18:00">18:00</option>
+                    <option value="19:00">19:00</option>
+                    <option value="20:00">20:00</option>
+                    <option value="21:00">21:00</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="schedule-modal-button">
+                <button>
+                  <span>Agendar</span>
+                </button>
+              </div>
+            </fieldset>
+          </form>
+        </div>
       </div>
-    </div>
+    </dialog>
   </body>
 </html>

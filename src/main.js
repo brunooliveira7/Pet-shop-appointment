@@ -8,3 +8,4 @@ import "./style.css";
 
 //importação dos arquivos JS
 import "./modules/form/submit.js"
+import "./modules/form/modal.js"

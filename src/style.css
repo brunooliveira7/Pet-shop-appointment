@@ -58,14 +58,14 @@ body {
   text-transform: uppercase;
 }
 
-.agenda header h1 {
+header .agenda h1 {
   color: #f5f4f5;
   font-size: 24px;
   font-weight: 700;
   line-height: 32px;
 }
 
-.agenda header p {
+header .agenda p {
   color: #98959d;
   font-size: 14px;
   font-weight: 500;
@@ -168,7 +168,7 @@ p {
   justify-content: end;
 }
 
-.new-schedule-button {
+.schedule-open-modal {
   display: flex;
   width: 390px;
   margin-top: 40px;
@@ -182,7 +182,7 @@ p {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.4);
 }
 
-.new-schedule-button button {
+.schedule-open-modal button {
   display: flex;
   height: 48px;
   padding: 12px 24px;
@@ -197,11 +197,11 @@ p {
   transition: 0.4s;
 }
 
-.new-schedule-button button:hover {
+.schedule-open-modal button:hover {
   opacity: 0.8;
 }
 
-.new-schedule-button button span {
+.schedule-open-modal button span {
   color: #050505;
   text-align: center;
   font-size: 16px;
@@ -222,21 +222,11 @@ p {
   z-index: 5;
 }
 
-.fade.hidden,
-.modal-overlay.hidden {
-  opacity: 0;
-  pointer-events: none;
-}
-
 .fade,
 .modal-overlay {
   transition: 0.5s;
   opacity: 1;
   pointer-events: all;
-}
-
-.modal-overlay.hidden {
-  top: 0;
 }
 
 .modal-overlay {
@@ -276,7 +266,7 @@ p {
   line-height: 24px;
 }
 
-.modal-header .close-modal-button {
+.modal-header .close-modal {
   border: none;
   cursor: pointer;
   background: none;
@@ -288,7 +278,7 @@ p {
   transition: 0.4s;
 }
 
-.modal-header .close-modal-button:hover {
+.modal-header .close-modal:hover {
   opacity: 0.8;
 }
 
@@ -406,7 +396,7 @@ select {
     margin-right: 40px;
   }
 
-  .new-schedule-button {
+  .schedule-open-modal {
     display: flex;
     width: 100%;
     align-items: flex-end;
