@@ -7,5 +7,5 @@ import "./libs/dayjs";
 import "./style.css";
 
 //importação dos arquivos JS
-import "./modules/form/submit.js"
-import "./modules/form/modal.js"
+import "./modules/modal/submit.js"
+import "./modules/modal/close-modal.js"
