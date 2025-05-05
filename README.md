@@ -15,10 +15,6 @@ Este é um aplicativo de agendamento de serviços para petshops, que permite aos
   <img alt="License" src="">
 </p>
 
-<p align="center">
-  <img alt="License" src="">
-</p>
-
 <br>
 
 ## 🧑🏻‍💻 Tecnologias
