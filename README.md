@@ -12,7 +12,7 @@ Este é um aplicativo de agendamento de serviços para petshops, que permite aos
 </p>
 
 <p align="center">
-  <img alt="License" src="">
+  <img alt="License" src="https://github.com/brunooliveira7/Pet-shop-appointment/blob/main/src/assets/Layout%20Petshop.png">
 </p>
 
 <br>
