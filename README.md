@@ -28,7 +28,7 @@ Projeto desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-
+O Petshop Appointment é facilitador para controle e a visualização da agenda diária de um Petshop.
 
 ## 🔖 Layout
 
