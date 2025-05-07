@@ -1,7 +1,7 @@
 <h1 align="center"> Pet-shop-appointment </h1>
 
 <p align="center">
-Este é um aplicativo de agendamento de serviços para petshops, que permite aos usuários organizar e gerenciar os atendimentos de forma prática e eficiente. Com ele, é possível adicionar novos agendamentos, visualizar os compromissos organizados por período do dia (manhã, tarde e noite), excluir agendamentos quando necessário e filtrar os serviços agendados por data específica, facilitando o controle e a visualização da agenda diária.
+Petshop Appointment é um aplicativo de agendamento de serviços para petshops, que permite aos usuários organizar e gerenciar os atendimentos de forma prática e eficiente. Com ele, é possível adicionar novos agendamentos, visualizar os compromissos organizados por período do dia (manhã, tarde e noite), excluir agendamentos quando necessário e filtrar os serviços agendados por data específica.
 </p>
 
 <p align="center">
@@ -28,7 +28,7 @@ Projeto desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-O Devlinks é um agregador de links para ser usado como cartão de visitas.
+
 
 ## 🔖 Layout
 
